@@ -1,0 +1,27 @@
+@import './../../shared/scss-global.scss';
+
+.storybook-button {
+  font-family: monospace;
+  font-weight: 700;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  background-color: #ddd;
+  color: black;
+  padding: 10px 20px;
+  user-select: none;
+}
+.storybook-button--primary {
+  background-color: $scss-color-tomato;
+  &:hover {
+    color: var(--color-gold);
+  }
+}
+.storybook-button--secondary {
+  background-color: var(--color-gold);
+  &:hover {
+    color: $scss-color-tomato;
+  }
+}
